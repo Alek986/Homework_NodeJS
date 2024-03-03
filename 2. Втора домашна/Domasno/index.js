@@ -1,5 +1,7 @@
 import fs from "fs";
 
+/// Exercise 1
+
 fs.writeFileSync("user_info.txt", "Bob Bobski is the best student in the school");
 
 
