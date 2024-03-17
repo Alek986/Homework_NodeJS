@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "f768e50a-0026-4498-b544-092ca1b22be1",
+		"name": "HOMEWORK_GET_PUT_POST_DELETE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33377993"
+	},
+	"item": [
+		{
+			"name": "GET ALL PRODUCTS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"4\",\r\n    \"bookTitle\": \"Dune  \",\r\n    \"isAvailable\": true,\r\n    \"genre\": \"Fiction\",\r\n    \"author\": \"Frank Herbert\",\r\n    \"pages\": 896\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/books",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST NEW BOOK",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookTitle\": \"The Lord of the Rings\",\r\n    \"isAvailable\": true,\r\n    \"genre\": \"Fiction\",\r\n    \"author\": \"John Ronald Reuel Tolkien\",\r\n    \"pages\": 1178\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/books",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookTitle\": \"1984\",\r\n    \"isAvailable\": true,\r\n    \"genre\": \"Dystopian\",\r\n    \"author\": \"George Orwell\",\r\n    \"pages\": 328\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/books/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
